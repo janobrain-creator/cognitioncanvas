@@ -662,11 +662,6 @@ a.chip:hover {
   margin-top: 6px;
 }
 
-.deal-mini .deal-mini-lead {
-  color: var(--text);
-  font-weight: 600;
-}
-
 .step {
   display: inline-flex;
   align-items: center;
