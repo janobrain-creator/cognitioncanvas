@@ -416,18 +416,6 @@ p {
   background: var(--text);
 }
 
-.tl-badge {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  background: var(--text);
-  color: var(--accent-fg);
-  padding: 4px 10px;
-  border-radius: 999px;
-  margin: 0 0 12px;
-}
 
 .tl-edu .tl-card {
   box-shadow: none;
@@ -449,6 +437,10 @@ p {
 .tl-logo {
   height: 22px;
   width: auto;
+}
+
+.tl-logo-tall {
+  height: 34px;
 }
 
 .tl-orgname {
@@ -477,12 +469,6 @@ p {
   margin-bottom: 0;
 }
 
-.tl-deals {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 14px;
-}
 
 /* Chips */
 .chip {
