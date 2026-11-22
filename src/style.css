@@ -1128,3 +1128,9 @@ a.chip:hover {
     margin-bottom: 24px;
   }
 }
+
+.footer-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 16px;
+}

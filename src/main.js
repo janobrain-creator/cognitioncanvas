@@ -1,3 +1,5 @@
+import './track.js';
+
 // Highlight the nav link for the section in view.
 const nav = document.querySelector('.nav');
 const navLinks = Array.from(nav.querySelectorAll('a'));
