@@ -233,11 +233,24 @@ p {
   max-width: 620px;
 }
 
+.hero-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.hero-contact .btn-small {
+  min-height: 32px;
+  padding: 0 12px;
+  font-size: 0.8rem;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 24px 0 16px;
+  margin: 20px 0 16px;
 }
 
 .contact-line {
@@ -393,6 +406,27 @@ p {
   border-radius: var(--radius);
   padding: 20px;
   box-shadow: var(--shadow);
+}
+
+.tl-featured .tl-card {
+  border: 2px solid var(--text);
+}
+
+.tl-featured::before {
+  background: var(--text);
+}
+
+.tl-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--text);
+  color: var(--accent-fg);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin: 0 0 12px;
 }
 
 .tl-edu .tl-card {
@@ -578,6 +612,50 @@ a.chip:hover {
 
 .deal-body p:last-child {
   margin-bottom: 0;
+}
+
+.deal-first {
+  background: var(--surface);
+  border-left: 3px solid var(--text);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+}
+
+.deal-first h4 {
+  font-size: 1.1rem;
+}
+
+.deal-first p {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.deal-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-top: 24px;
+}
+
+.deal-mini-logo {
+  width: 96px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.deal-mini h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.deal-mini p {
+  margin: 0;
+  color: #333;
+  font-size: 0.95rem;
 }
 
 .step {
@@ -768,42 +846,14 @@ a.chip:hover {
   margin-top: 6px;
 }
 
-.week {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-}
 
-.week li {
-  display: grid;
-  grid-template-columns: 52px 1fr;
-  grid-template-rows: auto auto;
-  column-gap: 12px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 14px 16px;
-}
 
-.week .day {
-  grid-row: 1 / span 2;
-  font-weight: 800;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
 
-.week strong {
+
+
+.hire-intro {
   font-size: 0.95rem;
-}
-
-.week li > span:last-child {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  line-height: 1.45;
+  color: #333;
 }
 
 .split {
@@ -897,12 +947,11 @@ a.chip:hover {
   margin-bottom: 16px;
 }
 
-.why-list {
+.why p {
   margin: 0;
-  padding-left: 20px;
-  display: grid;
-  gap: 12px;
   color: #333;
+  font-size: 1.05rem;
+  max-width: 760px;
 }
 
 /* Footer */
@@ -958,7 +1007,20 @@ a.chip:hover {
     padding: 0 32px;
   }
   .stats {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .deal-first,
+  .deal-body > section:last-child {
+    grid-column: 1 / -1;
+  }
+  .deal-mini {
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+    padding: 24px 32px;
+  }
+  .deal-mini-logo {
+    width: 120px;
   }
   .deal-strip {
     grid-template-columns: repeat(3, 1fr);
@@ -1033,18 +1095,14 @@ a.chip:hover {
   .cards-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .week {
-    grid-template-columns: repeat(5, 1fr);
+  .cards-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .week li {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    align-content: start;
-    row-gap: 6px;
-    padding: 18px;
+  .deal-body {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .week .day {
-    grid-row: auto;
+  .deal-body > section:last-child {
+    grid-column: auto;
   }
   .split {
     grid-template-columns: repeat(2, 1fr);
