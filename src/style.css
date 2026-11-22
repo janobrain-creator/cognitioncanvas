@@ -658,6 +658,15 @@ a.chip:hover {
   font-size: 0.95rem;
 }
 
+.deal-mini p + p {
+  margin-top: 6px;
+}
+
+.deal-mini .deal-mini-lead {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .step {
   display: inline-flex;
   align-items: center;
