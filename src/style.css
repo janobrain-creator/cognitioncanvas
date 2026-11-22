@@ -672,24 +672,7 @@ a.chip:hover {
   flex-shrink: 0;
 }
 
-.threads {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid var(--border);
-}
 
-.threads-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 600;
-  color: var(--text-muted);
-  margin-right: 4px;
-}
 
 .playbook {
   margin-top: 40px;
