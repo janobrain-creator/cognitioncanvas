@@ -81,9 +81,8 @@ p {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.94);
+  background: #fff;
   border-bottom: 1px solid var(--border);
-  backdrop-filter: saturate(1.2) blur(6px);
 }
 
 .topbar-inner {
@@ -484,7 +483,6 @@ a.chip:hover {
 }
 
 .deal {
-  scroll-margin-top: calc(var(--topbar-h) + 16px);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px 20px;
