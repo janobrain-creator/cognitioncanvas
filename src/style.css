@@ -408,14 +408,6 @@ p {
   box-shadow: var(--shadow);
 }
 
-.tl-featured .tl-card {
-  border: 2px solid var(--text);
-}
-
-.tl-featured::before {
-  background: var(--text);
-}
-
 
 .tl-edu .tl-card {
   box-shadow: none;
@@ -663,31 +655,6 @@ a.chip:hover {
 }
 
 
-
-.playbook {
-  margin-top: 40px;
-  padding: 28px 20px;
-  border-radius: var(--radius);
-  background: var(--text);
-  color: var(--accent-fg);
-}
-
-.playbook h3 {
-  font-size: 1.25rem;
-  margin-bottom: 16px;
-}
-
-.playbook-list {
-  margin: 0;
-  padding-left: 20px;
-  display: grid;
-  gap: 12px;
-  color: #d6d6d6;
-}
-
-.playbook-list strong {
-  color: #fff;
-}
 
 /* Deal strip (hero) */
 .strip-label {
@@ -1033,7 +1000,6 @@ a.chip:hover {
   .plan {
     grid-template-columns: repeat(2, 1fr);
   }
-  .playbook,
   .why {
     padding: 36px;
   }
